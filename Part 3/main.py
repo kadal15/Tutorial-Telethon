@@ -8,9 +8,9 @@ import requests, json, re, sys, os
 if not os.path.exists('session'):
     os.makedirs('session')
 
-api_id = 837558
-api_hash = 'e8832de14f7d085b075e195edf516f32'
-phone_number = '+6285336117892'
+api_id = '<API ID>'
+api_hash = '<API HASH>'
+phone_number = '+6285xxxxxxxxx'
 
 client = TelegramClient('session/'+phone_number,api_id,api_hash)
 client.connect()
@@ -23,7 +23,7 @@ if not client.is_user_authorized():
         me = client.start(phone_number,password)
 
 myself = client.get_me()
-print(myself)
+print(myself.username)
 
 channel_username = '@Dogecoin_click_bot'
 

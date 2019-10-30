@@ -1,4 +1,0 @@
-telethon
-pyaes
-async-generator
-rsa
