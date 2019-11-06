@@ -76,6 +76,3 @@ for ulang in range(999999999):
         client(GetBotCallbackAnswerRequest(channel_username,channel_id,data=message_history.messages[0].reply_markup.rows[1].buttons[1].data))
         print ('Berhasil Skip Captcha')
 
-
-
-
